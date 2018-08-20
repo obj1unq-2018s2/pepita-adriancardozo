@@ -9,7 +9,7 @@ object mondongo {
 
 // comida que esta fallada
 object bigMac {
-	method energiaQueOtorga() { return 2 }
+	method energiaPorGramo() { return 2 }
 }
 
 /*
@@ -17,6 +17,9 @@ object bigMac {
  */ 
 object alcaucil {
 	// completar
+	method energiaPorGramo(){
+		return 20
+	}
 }
 
 /*
@@ -24,6 +27,39 @@ object alcaucil {
  */ 
 object sorgo {
 	// completar
+	method energiaPorGramo(){
+		return 9
+	}
 }
 
 // despues, agregar mijo y canelones
+object mijo {
+	var joules = 0
+	method energiaPorGramo(){
+		return joules
+	}
+	method mojarse(){
+		joules = 15
+	}
+	method secarse(){
+		joules = 20
+	}
+}
+object canelones {
+	var joules = 20
+	method energiaPorGramo(){
+		return joules
+	}
+	method sinAderezos(){
+		joules = 20
+	}
+	method conSalsa(){
+		joules = 25
+	}
+	method conQueso(){
+		joules = 27
+	}
+	method conQuesoYSalsa(){
+		joules = 32
+	}
+}
