@@ -33,6 +33,9 @@ object sorgo {
 }
 
 // despues, agregar mijo y canelones
+
+// TODO Esto tiene un error que denominamos precálculo. Es más fácil de ver en los canelones,
+// resolvé primero ese y luego aplicá la misma estrategia acá.
 object mijo {
 	var joules = 0
 	method energiaPorGramo(){
@@ -45,6 +48,8 @@ object mijo {
 		joules = 20
 	}
 }
+
+// TODO Debería permitir agregar/quitar queso y salsa independientemente.
 object canelones {
 	var joules = 20
 	method energiaPorGramo(){
